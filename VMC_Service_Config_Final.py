@@ -37,7 +37,7 @@ req = requests.get('https://vmc.vmware.com/vmc/api/orgs', headers = finalHeader)
 orgID = req.json()[0]['id']
 
 
-baseurl = f'https://nsx-3-9-59-86.rp.vmwarevmc.com/vmc/reverse-proxy/api/orgs/{orgID}/sddcs/9728b0cc-2b30-4715-9f26-42e94f55eb0d/'
+baseurl = f'https://nsx-3-9-59-86.rp.vmwarevmc.com/vmc/reverse-proxy/api/orgs/{orgID}/sddcs/SDDC_ID_9728b0cc-2b30-b0d-x-x/'
 uri =f'policy/api/v1/infra/services/'
 
 
