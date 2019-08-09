@@ -123,12 +123,12 @@ def rule_parse(rule_data,ip_groups_dict,services_dict,rule_source_name = 'ANY',r
             print (f'\nprinting rule number {n+1}::')
             
             print (f'RuleName=={rule_name} || RuleSource=={rule_source_name} || RuleDestination=={rule_dest_name} || RuleService=={rule_service_name}')
-            with open ('c://Users/arawat/Desktop/Data/Study/PythonScript/demo/VMC_Rules_Output.txt','a') as f:
+            with open ('c://Users/ardo/VMC_Rules_Output.txt','a') as f:
                 f.write(f'RuleName=={rule_name},RuleSource=={rule_source_name},RuleDestination=={rule_dest_name},RuleService=={rule_service_name}\n')
         except:
             print (f'\nprinting rule number {n+1}::')
             print (f'RuleName=={rule_name} || RuleSource=={rule_source_name} || RuleDestination=={rule_dest_name} || RuleService== "ANY"\n')
-            with open ('c://Users/arawat/Desktop/Data/Study/PythonScript/demo/VMC_Rules_Output.txt','a') as f:
+            with open ('c://Users/ardfdfawat/DeMC_Rules_Output.txt','a') as f:
                 f.write(f'RuleName=={rule_name},RuleSource=={rule_source_name},RuleDestination=={rule_dest_name},RuleService=={rule_service_name}\n')
 
 #rule_parse(rule_source_name = 'ANY',rule_dest_name= 'ANY',rule_service_name='ANY')
@@ -169,7 +169,7 @@ def main():
                     print(f'\n..................printing rule details from the section {item}.................')
                     print('='*100)
                     #print(f'Total Number of Rules are : {len(rule_entries['results'])}\n')
-                    with open ('c://Users/arawat/Desktop/Data/Study/PythonScript/demo/VMC_Rules_Output.txt','a') as f:
+                    with open ('c://Users/adfdfrawat/Desktop/Da/VMC_Rules_Output.txt','a') as f:
                         f.write(f"\n\n******************** Printing FW rule for Section {item}***************\n\n")
                         f.write(f"Total Number of Rules are : {len(rule_entries['results'])}\n")
                     rule_parse(rule_entries,ip_groups_dict=ip_groups_dict,services_dict=services_dict,rule_source_name = 'ANY',rule_dest_name= 'ANY',rule_service_name='ANY')
@@ -179,7 +179,7 @@ def main():
                 rule_entries = rule_data(choice,section_map_dict,sddc_baseurl)
                 #len(rule_entries)
                 print(f'\n..................printing rule details from the section {choice}...............')
-                with open ('c://Users/arawat/Desktop/Data/Study/PythonScript/demo/VMC_Rules_Output.txt','a') as f:
+                with open ('c://Users/aradfdsfwat/Desmo/VMC_Rules_Output.txt','a') as f:
                     f.write(f"\n\n******************** Printing FW rule for Section {choice}***************\n\n")
                     f.write(f"Total Number of Rules are : {len(rule_entries['results'])}\n")
                 rule_parse(rule_entries,ip_groups_dict=ip_groups_dict,services_dict=services_dict,rule_source_name = 'ANY',rule_dest_name= 'ANY',rule_service_name='ANY')
